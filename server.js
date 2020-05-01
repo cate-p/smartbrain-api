@@ -55,8 +55,8 @@ app.post("/imageurl", (req, res) => {
 	image.handleApiCall(req, res);
 });
 
-const PORT = process.env.PORT;
-app.listen(PORT || 3001, () => {
-	console.log(`app is running on port ${PORT}`); // bash command -> "PORT=3001 node server.js"
+// const PORT = process.env.PORT;
+app.listen(process.env.PORT || 3001, () => {
+	console.log(`app is running on port ${process.env.PORT}`); // bash command -> "PORT=3001 node server.js"
 });
-console.log(PORT);
+// console.log(PORT);
